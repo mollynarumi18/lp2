@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Interesante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: double #0e30c9 5px;
+            border-radius: 80%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenidos a Mi Página Web</h1>
+    <p>Una página con colores y imágenes interesantes</p>
+</header>
+
+<nav>
+    <a href="#home">Inicio</a>
+    <a href="#about">Acerca de</a>
+    <a href="#gallery">Galería</a>
+    <a href="#contact">Contacto</a>
+</nav>
+
+<div class="container">
+    <section id="home">
+        <h2>Inicio</h2>
+        <p>Esta es la sección de inicio de nuestra página web. Aquí puedes encontrar información interesante y actualizaciones recientes.</p>
+    </section>
+
+    <section id="about">
+        <h2>Acerca de</h2>
+        <p>Esta sección proporciona información sobre nosotros. Aprende más sobre nuestra misión, visión y valores.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="https://www.datacars.com/wp-content/themes/datacars/images/landing_prius.png" alt="Imagen 1">
+            <img src="https://www.datacars.com/wp-content/themes/datacars/images/landing_prius.png" alt="Imagen 2">
+            <img src="https://www.datacars.com/wp-content/themes/datacars/images/landing_prius.png" alt="Imagen 3">
+            <img src="https://www.datacars.com/wp-content/themes/datacars/images/landing_prius.png" alt="Imagen 4">
+            <img src="https://www.datacars.com/wp-content/themes/datacars/images/landing_prius.png" alt="Imagen 5">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Puedes contactarnos a través del siguiente formulario.</p>
+        <form>
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
